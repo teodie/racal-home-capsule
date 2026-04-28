@@ -1,0 +1,7 @@
+Stones I encounter on the path of completing this project.
+date,issue,resolution
+4-27-2026,I don't know where to best place the components, pages etc. on the new created src/app,I decide to put my folders inside the src folder separating the app folder since it make sence to avoid every folder being route inside the app folder
+4-27-2026, I don't know what is the best alt for image tag for next image, For hero section image just blank to skip it of the screen readers
+I don't know how to make the image so that it will take up all the visible space on the screen in the hero page
+How to make a prop optional in type script, by adding question mark at the end on the type border?
+I have declared the button have default value but when I use it on the component typescript complain that background should have value. I want that when no background is passed it will fallback to default
