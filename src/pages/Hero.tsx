@@ -5,24 +5,27 @@ import Button from "@/components/Button"
 
 const Hero = () => {
   return (
-    <div className="bg-red-400 ">
+    <div className="">
 
-      <div className="relative">
+      <div className="relative ">
 
-        <div className="bg-blue-300 relative min-h-dvh ">
-          <Image src={image.hero} fill alt="" className="object-cover" />
+        <div className="min-h-75 relative md:min-h-dvh ">
+          <Image src={image.hero} loading="eager" fill alt="" className="object-cover" />
+          <span className="hidden bg-black/30 md:flex absolute inset-0 md:bg-linear-to-r from-black/90
+           via-black/5 via-70% to-transparent" />
         </div>
 
-        <span className="absolute inset-0 bg-linear-to-r from-black/90
-           via-black/5 via-70% to-transparent" />
 
-        <div className="absolute inset-0 flex flex-col justify-center gap-4 max-w-4xl mx-20">
-          <h1 className="text-8xl font-bold  text-white">Racal 5 Star Home Capsule</h1>
-          <p className="text-xl text-gray-300">Experience compact luxury, designed for comfort, efficiency, and modern living. Enjoy panoramic views and smart design in a stylish, space-saving retreat.</p>
+
+        <div className="
+        items-start mx-5 text-start
+        md:absolute inset-0 flex flex-col md:justify-center gap-4 md:items-center md:text-center md:mx-20 lg:max-w-4xl lg:items-start lg:text-start">
+          <h1 className="text-2xl md:text-5xl lg:text-8xl font-bold text-[#333333]  md:text-white">Racal 5 Star Home Capsule</h1>
+          <p className="text-sm md:text-xl  md:text-white">Experience compact luxury with Racal Home Capsule, designed for comfort, efficiency, and modern living. Enjoy panoramic views and smart design in a stylish, space-saving retreat.</p>
 
           <div className="flex gap-3">
             <Button title="Book a visit" />
-            <Button title="Inquire" background="bg-background" color="text-black" border="border border-gray-400"/>
+            <Button title="Inquire" background="bg-background" color="text-black" border="border border-gray-400" />
           </div>
         </div>
       </div>

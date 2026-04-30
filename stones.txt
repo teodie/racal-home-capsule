@@ -5,3 +5,8 @@ date,issue,resolution
 I don't know how to make the image so that it will take up all the visible space on the screen in the hero page
 How to make a prop optional in type script, by adding question mark at the end on the type border?
 I have declared the button have default value but when I use it on the component typescript complain that background should have value. I want that when no background is passed it will fallback to default
+I am picking where should I put the function for closing and opening the menu on mobile. Should I put it in the lib or utils, Neither as per AI since utils if for pure mathematical function (eg. calculatePay(), formateData() ) and lib is for third party libraries like (e.g., prisma.ts, stripe.ts, supabase.ts)
+I got issue with the mobile navigations and I am trying to fix it for 2 days now. The problems is that the common thing that I see on react project like on the greatstock video is that It repeat the navigation for mobile and for desktop.
+I dont know how to turnoff vertical scroll bar on the right hand side
+I dont know how to properly use the background blur, I use backdrop-blur-2xl and note when using border-shadow the backdrop will not take effect
+I want to implement a sliding navigation from right to left on the mobile navigation the problem is that I dont know how to manage it on the parent

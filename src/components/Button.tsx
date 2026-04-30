@@ -8,7 +8,7 @@
 
 const Button = ({title, background = "bg-primary", border, color = "text-white" } : ButtonProps ) => {
   return (
-    <button className={`${background} ${color} ${border} px-6 py-3 rounded-lg text-xl cursor-pointer hover:scale-[1.03] transition-transform duration-300`}>
+    <button className={`${background} ${color} ${border} px-6 py-3 rounded-lg text-sm cursor-pointer hover:scale-[1.03] transition-transform duration-300`}>
       {title}
     </button>
   )
