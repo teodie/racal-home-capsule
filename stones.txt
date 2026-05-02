@@ -10,3 +10,4 @@ I got issue with the mobile navigations and I am trying to fix it for 2 days now
 I dont know how to turnoff vertical scroll bar on the right hand side
 I dont know how to properly use the background blur, I use backdrop-blur-2xl and note when using border-shadow the backdrop will not take effect
 I want to implement a sliding navigation from right to left on the mobile navigation the problem is that I dont know how to manage it on the parent
+I dont know how to use svg on a react project

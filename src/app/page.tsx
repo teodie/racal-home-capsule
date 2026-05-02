@@ -1,3 +1,4 @@
+import Features from "@/pages/Features";
 import Hero from "@/pages/Hero";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <div className="">
       <main className="">
         <Hero />
+        <Features />
       </main>
     </div>
   );
