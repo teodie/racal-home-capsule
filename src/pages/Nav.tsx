@@ -20,7 +20,7 @@ const Nav = () => {
 
         <ul className='hidden md:flex text-sm font-medium gap-10'>
           <li><a href="">Home Capsules</a></li>
-          <li><a href="">Features</a></li>
+          <li><a href="#features">Features</a></li>
           <li><a href="">Visual Tour</a></li>
         </ul>
 
