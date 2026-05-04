@@ -1,5 +1,6 @@
 import Features from "@/pages/Features";
 import Hero from "@/pages/Hero";
+import VisualTour from "@/pages/VisualTour";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="">
         <Hero />
         <Features />
+        <VisualTour />
       </main>
     </div>
   );

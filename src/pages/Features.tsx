@@ -1,6 +1,7 @@
 import FeatureTile from '@/components/FeatureTile'
 import { capsule, icons } from '../../public/assets/assets'
 import Image from 'next/image'
+import PageTitle from '@/components/PageTitle'
 
 const Features = () => {
   const features = [
@@ -11,7 +12,7 @@ const Features = () => {
 
   return (
     <section id='features'>
-      <h2 className='text-center text-3xl text-amber-600 font-medium my-5 border-b mx-10'>Features</h2>
+     <PageTitle title='Features' />
       <div className='md:grid md:grid-cols-1 lg:grid-cols-6 lg:grid-rows-4'>
       
         <div className='lg:col-start-1 lg:col-end-4 lg:row-span-full
