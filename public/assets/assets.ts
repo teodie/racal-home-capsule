@@ -5,6 +5,10 @@ import front_view from './images/frontview.jpg'
 import aluminum_icon from './icons/aluminum.svg'
 import smart_home from './icons/smart_home.svg'
 import window from './icons/wide_window.svg'
+import bed from './images/bed.jpg'
+import sala from './images/sala.jpg'
+import cr from './images/cr.jpg'
+import layout from './images/layout.png'
 
 export const logo = {
   primary: primary_logo,
@@ -16,7 +20,12 @@ export const image = {
 }
 
 export const capsule = {
-  front_view: front_view
+  layout,
+  front_view,
+  home_capsule,
+  bed,
+  sala,
+  cr
 }
 
 export const icons ={

@@ -18,7 +18,7 @@ const Features = () => {
         <div className='lg:col-start-1 lg:col-end-4 lg:row-span-full
         z-0 row-start-1 row-end-3 col-start-1 col-end-2 md:mx-0 md:h-120 md:mb-0 md:rounded-none 0 rounded-2xl relative overflow-hidden h-75 bg-blue-500 mx-5 mb-10'>
           <Image src={capsule.front_view} alt="" fill className='object-cover scale-105' />
-          <span className='hidden md:flex absolute inset-0 bg-black/50' />
+          <span className='hidden md:flex lg:hidden absolute inset-0 bg-black/50' />
         </div>
         <div className='lg:col-start-4 lg:col-end-7 lg:row-start-1 lg:row-end-3 lg:items-start lg:text-start mx-5 md:items-center lg:mx-0 md:text-center md:px-10 justify-center row-start-1 z-10 row-end-3 col-start-1 col-end-2  flex flex-col gap-3 '>
           <h2 className="text-3xl md:text-5xl font-bold text-black  md:text-white lg:text-black ">Elevate Your Escape</h2>

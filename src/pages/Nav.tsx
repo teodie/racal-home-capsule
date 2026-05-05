@@ -21,7 +21,7 @@ const Nav = () => {
         <ul className='hidden md:flex text-sm font-medium gap-10'>
           <li><a href="">Home Capsules</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="">Visual Tour</a></li>
+          <li><a href="#visualtour">Visual Tour</a></li>
         </ul>
 
         <div className='hidden lg:flex gap-15'>
