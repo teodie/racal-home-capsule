@@ -22,6 +22,7 @@ const Nav = () => {
           <li><a href="">Home Capsules</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#visualtour">Visual Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div className='hidden lg:flex gap-15'>

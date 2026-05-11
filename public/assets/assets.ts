@@ -9,6 +9,7 @@ import bed from './images/bed.jpg'
 import sala from './images/sala.jpg'
 import cr from './images/cr.jpg'
 import layout from './images/layout.png'
+import capsule_sunset from './images/capsule_sunset.png'
 
 export const logo = {
   primary: primary_logo,
@@ -25,7 +26,8 @@ export const capsule = {
   home_capsule,
   bed,
   sala,
-  cr
+  cr,
+  capsule_sunset
 }
 
 export const icons ={
