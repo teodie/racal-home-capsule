@@ -11,7 +11,7 @@ const Features = () => {
   ]
 
   return (
-    <section id='features'>
+    <section id='features' className='scroll-mt-2'>
      <PageTitle title='Features' />
       <div className='md:grid md:grid-cols-1 lg:grid-cols-6 lg:grid-rows-4'>
       

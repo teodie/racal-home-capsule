@@ -12,7 +12,7 @@ const VisualTour = () => {
   ]
 
   return (
-    <section id='visualtour'>
+    <section id='visualtour' className='scroll-mt-2'>
 
       <div className=' text-center'>
         <PageTitle title='Visual Tour' />

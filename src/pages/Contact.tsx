@@ -10,7 +10,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id='contact'>
+    <section id='contact' className='scroll-mt-2'>
       <div>
         <PageTitle title='Contact' />
         <h2 className='text-2xl md:text-[40px] lg:text-5xl md:mb-4 lg:mb-6 font-bold text-center'>How can we help you?</h2>
