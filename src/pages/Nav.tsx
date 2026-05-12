@@ -39,9 +39,12 @@ const Nav = () => {
 
           <ul className=' flex flex-col text-white font-bold tracking-wide text-center'>
             <li className=' bg-white/10 backdrop-blur-[2px]  py-5  flex justify-start border-b border-gray-500 pl-5 pr-5'>  <X size={40} className=' text-black' onClick={closeMenu} /></li>
-            <li className='  bg-white/10 backdrop-blur-[2px] py-5 border-b border-gray-500 pl-5  '><a href="">Home</a></li>
-            <li className='  bg-white/10 backdrop-blur-[2px] py-5 border-b border-gray-500 pl-5  '><a href="">About</a></li>
-            <li className='  bg-white/10 backdrop-blur-[2px] py-5 border-b border-gray-500 pl-5  '><a href="">Contact</a></li>
+            {
+              navigation.map((nav, index) => (
+                <li key={index} className=' bg-white/10 backdrop-blur-[2px] py-5 border-b border-gray-500 pl-5  '><a onClick={closeMenu} href={nav.href}>{nav.title}</a></li>
+              ))
+            }
+           
           </ul>
         </div>
 
