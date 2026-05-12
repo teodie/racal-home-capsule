@@ -16,7 +16,7 @@ const Footer = () => {
         <ul className=' flex gap-4'>
           {
             navigation.map((nav) => (
-              <li><a href={nav.href}>{nav.title}</a></li>
+              <li key={nav.href} ><a href={nav.href}>{nav.title}</a></li>
             ))
           }
         </ul>
