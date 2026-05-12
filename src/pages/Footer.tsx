@@ -4,12 +4,12 @@ import { navigation } from "@/constants/navigation"
 
 const Footer = () => {
   return (
-    <div className='py-20 max-w-7xl m-auto'>
+    <footer className='max-w-7xl mx-auto my-10'>
       <div className="flex flex-col items-center border-b border-black gap-3">
         <Image src={logo.primary} alt="Racal Home capsule logo" />
         <h3>racalhomecapsule@gmail.com</h3>
       </div>
-      <div className="flex justify-between py-5">
+      <div className="flex flex-col gap-3 md:flex-row items-center md:justify-between py-5 mx-5">
         <h3>© 2026 Racal Home Capsule. All rights reserved.
         </h3>
 
@@ -22,7 +22,7 @@ const Footer = () => {
         </ul>
 
       </div>
-    </div>
+    </footer>
   )
 }
 
