@@ -2,8 +2,9 @@
 import Image from 'next/image'
 import { logo } from '../../public/assets/assets'
 import Button from '@/components/Button'
-import { Menu, X } from 'lucide-react'
+import { Menu, PhoneCallIcon, X } from 'lucide-react'
 import { useState } from 'react'
+import { navigation } from '@/constants/navigation'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,13 +20,17 @@ const Nav = () => {
         <Image src={logo.primary} alt='logo' className='mr-auto' />
 
         <ul className='hidden md:flex text-sm font-medium gap-10'>
-          <li><a href="">Home Capsules</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#visualtour">Visual Tour</a></li>
-          <li><a href="#contact">Contact</a></li>
+          {
+            navigation.map((nav, index) => (
+              <li key={index}><a href={nav.href}>{nav.title}</a></li>
+            ))
+          }
         </ul>
 
-        <div className='hidden lg:flex gap-15'>
+        <div className='hidden lg:flex gap-3'>
+          <div className='flex items-center gap-2'>
+            <PhoneCallIcon size={20} className='text-amber-600'/>
+            <span className=' text-amber-600 text-bold text-xl'>0917-638-9327</span></div>
           <Button title='Book a visit' />
         </div>
 
