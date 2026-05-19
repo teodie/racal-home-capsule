@@ -4,6 +4,8 @@ import "./globals.css";
 import Nav from "@/pages/Nav";
 import Footer from "@/pages/Footer";
 import Modal from "@/components/Modal";
+import BookingForm from "@/components/BookingForm";
+import Confimation from "@/components/Confimation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +27,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html
       lang="en"
@@ -33,7 +36,6 @@ export default function RootLayout({
       <body className="">
         
         <Nav />
-        <Modal />
         {children}
         <Footer />
       </body>

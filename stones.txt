@@ -13,3 +13,7 @@ I want to implement a sliding navigation from right to left on the mobile naviga
 I dont know how to use svg on a react project
 I dont know how to create carousel/image slider
 I dont know how to pass lucide react icons as a prop
+I dont know how to use Form on the web
+I dont know How HTML date and time types are stored in state
+I dont know how to iterate an object
+I dont know how to stop the loop in foreach
