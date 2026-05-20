@@ -10,6 +10,12 @@ import { useModal } from "@/hooks/useModal"
 const Hero = () => {
   const { modalVisible, openModal, closeModal } = useModal()
 
+  const scrollToContact = () => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
 
   return (
     <div className="">
@@ -17,7 +23,7 @@ const Hero = () => {
       <div className="relative ">
 
         {
-          modalVisible && <Modal toggle={closeModal}/>
+          modalVisible && <Modal toggle={closeModal} />
         }
 
         <div className="min-h-75 relative md:min-h-dvh ">
@@ -32,8 +38,8 @@ const Hero = () => {
           <p className="text-sm md:text-xl  md:text-white">Experience compact luxury with Racal Home Capsule, designed for comfort, efficiency, and modern living. Enjoy panoramic views and smart design in a stylish, space-saving retreat.</p>
 
           <div className="flex gap-3">
-            <Button  action={openModal} title="Book a visit" />
-            <Button title="Inquire" background="bg-background" color="text-black" border="border border-gray-400" />
+            <Button action={openModal} title="Book a visit" />
+            <Button action={scrollToContact} title="Inquire" background="bg-background" color="text-black" border="border border-gray-400" />
           </div>
         </div>
       </div>
