@@ -5,14 +5,14 @@ import Button from '@/components/Button'
 import { Menu, PhoneCallIcon, X } from 'lucide-react'
 import { useState } from 'react'
 import { navigation } from '@/constants/navigation'
+import { useModal } from '@/hooks/useModal'
 
 const Nav = () => {
+  const { openModal } = useModal()
+
   const [isOpen, setIsOpen] = useState(false)
-
   const openMenu = () => setIsOpen(true)
-
   const closeMenu = () => setIsOpen(false)
-
 
   return (
     <header>
@@ -32,7 +32,7 @@ const Nav = () => {
           <div className='flex items-center gap-2'>
             <PhoneCallIcon size={20} className='text-amber-600' />
             <span className=' text-amber-600 text-bold text-xl'>0917-638-9327</span></div>
-          <Button title='Book a visit' />
+          <Button action={openModal} title='Book a visit' />
         </div>
 
         <Menu size={40} className='md:hidden' onClick={openMenu} />

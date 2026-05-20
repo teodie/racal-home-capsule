@@ -5,11 +5,11 @@ import VisualTour from "@/pages/VisualTour";
 
 export default function Home() {
   return (
-      <main className="">
-        <Hero />
-        <Features />
-        <VisualTour />
-        <Contact />
-      </main>
+    <main className="">
+      <Hero />
+      <Features />
+      <VisualTour />
+      <Contact />
+    </main>
   );
 }

@@ -4,10 +4,11 @@ import { image } from "../../public/assets/assets"
 import Button from "@/components/Button"
 import Modal from "@/components/Modal"
 import { useState } from "react"
+import { useModal } from "@/hooks/useModal"
 
 
 const Hero = () => {
-  const [showModal, setShowModal] = useState(false)
+  const { modalVisible, openModal, closeModal } = useModal()
 
 
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
       <div className="relative ">
 
         {
-          showModal && <Modal toggle={() => setShowModal(false)} />
+          modalVisible && <Modal toggle={closeModal}/>
         }
 
         <div className="min-h-75 relative md:min-h-dvh ">
@@ -31,7 +32,7 @@ const Hero = () => {
           <p className="text-sm md:text-xl  md:text-white">Experience compact luxury with Racal Home Capsule, designed for comfort, efficiency, and modern living. Enjoy panoramic views and smart design in a stylish, space-saving retreat.</p>
 
           <div className="flex gap-3">
-            <Button  action={() => setShowModal(true)} title="Book a visit" />
+            <Button  action={openModal} title="Book a visit" />
             <Button title="Inquire" background="bg-background" color="text-black" border="border border-gray-400" />
           </div>
         </div>
