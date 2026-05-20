@@ -18,6 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  icons: { icon: '/assets/icons/favicon.ico'},
   title: "Racal Home Capsule",
   description: "Racal 5 star home capsule website",
 };
