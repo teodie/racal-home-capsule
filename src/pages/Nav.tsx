@@ -12,7 +12,7 @@ const Nav = () => {
   const openMenu = () => setIsOpen(true)
 
   const closeMenu = () => setIsOpen(false)
-  
+
 
   return (
     <header>
@@ -22,14 +22,15 @@ const Nav = () => {
         <ul className='hidden md:flex text-sm font-medium gap-10'>
           {
             navigation.map((nav, index) => (
-              <li key={index}><a href={nav.href}>{nav.title}</a></li>
+              <li key={index} className='relative'>
+                <a href={nav.href} className='hover:text-amber-600 before:bg-amber-600 hover:before:w-full  before:h-1 before:w-0 before:absolute before:-bottom-2 before:origin-left before:transition-all duration-1000'>{nav.title}</a></li>
             ))
           }
         </ul>
 
         <div className='hidden lg:flex gap-3'>
           <div className='flex items-center gap-2'>
-            <PhoneCallIcon size={20} className='text-amber-600'/>
+            <PhoneCallIcon size={20} className='text-amber-600' />
             <span className=' text-amber-600 text-bold text-xl'>0917-638-9327</span></div>
           <Button title='Book a visit' />
         </div>
@@ -41,10 +42,10 @@ const Nav = () => {
             <li className=' bg-white/10 backdrop-blur-[2px]  py-5  flex justify-start border-b border-gray-500 pl-5 pr-5'>  <X size={40} className=' text-black' onClick={closeMenu} /></li>
             {
               navigation.map((nav, index) => (
-                <li key={index} className=' bg-white/10 backdrop-blur-[2px] py-5 border-b border-gray-500 pl-5  '><a onClick={closeMenu} href={nav.href}>{nav.title}</a></li>
+                <li key={index} className=' bg-white/10 backdrop-blur-[2px] py-5 border-b border-gray-500 pl-5 '><a onClick={closeMenu} href={nav.href}>{nav.title}</a></li>
               ))
             }
-           
+
           </ul>
         </div>
 
