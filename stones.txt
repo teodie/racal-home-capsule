@@ -18,3 +18,5 @@ I dont know How HTML date and time types are stored in state
 I dont know how to iterate an object
 I dont know how to stop the loop in foreach
 I dont know how useContext and createContext work
+I dont know how to pass Ref from useRef as a prop to component
+I dont know how to implement blur the nav onscroll

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { logo } from '../../public/assets/assets'
 import Button from '@/components/Button'
 import { Menu, PhoneCallIcon, X } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { navigation } from '@/constants/navigation'
 import { useModal } from '@/hooks/useModal'
 
@@ -14,9 +14,24 @@ const Nav = () => {
   const openMenu = () => setIsOpen(true)
   const closeMenu = () => setIsOpen(false)
 
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+
   return (
     <header>
-      <nav className=' px-5 md:px-10 lg:px-20 flex gap-10 m-auto items-center'>
+      <nav className={`px-5 md:px-10 lg:px-20 flex gap-10 m-auto items-center fixed bg-white z-50 top-0 left-0 right-0 ${isScrolled && "bg-white/70 backdrop-blur-md border-b border-gray-300 shadow-md"}`}>
         <Image src={logo.primary} alt='logo' className='mr-auto' />
 
         <ul className='hidden md:flex text-sm font-medium gap-10'>
