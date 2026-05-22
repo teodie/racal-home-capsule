@@ -53,11 +53,11 @@ const Nav = () => {
         <Menu size={40} className='md:hidden' onClick={openMenu} />
         <div className={`${isOpen ? "translate-0" : "translate-x-80"} absolute top-0 right-0  z-1 w-80 border-l border-gray-500 transition-transform duration-300`}>
 
-          <ul className=' flex flex-col text-white font-bold tracking-wide text-center'>
-            <li className=' bg-white/10 backdrop-blur-[2px]  py-5  flex justify-start border-b border-gray-500 pl-5 pr-5'>  <X size={40} className=' text-black' onClick={closeMenu} /></li>
+          <ul className=' flex flex-col text-amber-600 font-bold tracking-wide text-center'>
+            <li className=' bg-white  py-5  flex justify-start border-b border-gray-500 pl-5 pr-5'>  <X size={40} className=' text-black' onClick={closeMenu} /></li>
             {
               navigation.map((nav, index) => (
-                <li key={index} className=' bg-white/10 backdrop-blur-[2px] py-5 border-b border-gray-500 pl-5 '><a onClick={closeMenu} href={nav.href}>{nav.title}</a></li>
+                <li key={index} className=' bg-white py-5 border-b border-gray-500 pl-5 '><a onClick={closeMenu} href={nav.href}>{nav.title}</a></li>
               ))
             }
 
