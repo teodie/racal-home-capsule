@@ -12,14 +12,14 @@ const VisualTour = () => {
   ]
 
   return (
-    <section id='visualtour' className='scroll-mt-2'>
+    <section id='visualtour' className='scroll-mt-20'>
 
       <div className=' text-center'>
         <PageTitle title='Visual Tour' />
         <h2 className='text-2xl md:text-[40px] lg:text-5xl md:mb-4 lg:mb-6 font-bold'>Experience Luxury with Nature</h2>
       </div>
 
-      <div className='flex flex-col lg:grid lg:grid-cols-2 '>
+      <div className='flex flex-col lg:grid lg:grid-cols-2'>
 
         <div className='order-2 grid gap-5 grid-cols-1'>
           <div className='relative'>
