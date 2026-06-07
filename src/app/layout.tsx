@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/pages/Nav";
-import Footer from "@/pages/Footer";
+import Nav from "@/elements/Nav";
+import Footer from "@/elements/Footer";
 import Modal from "@/components/Modal";
 import BookingForm from "@/components/BookingForm";
 import Confimation from "@/components/Confimation";

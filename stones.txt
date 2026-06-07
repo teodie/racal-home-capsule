@@ -20,3 +20,6 @@ I dont know how to stop the loop in foreach
 I dont know how useContext and createContext work
 I dont know how to pass Ref from useRef as a prop to component
 I dont know how to implement blur the nav onscroll
+I dont know how to deploy on Vercel
+Pitfall using "pages" as a directory name for components when using App router will cause build
+error due to deployment is trying to support both App router and Pages router which "pages" directory have a special meaning for page router

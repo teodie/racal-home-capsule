@@ -1,7 +1,7 @@
-import Contact from "@/pages/Contact";
-import Features from "@/pages/Features";
-import Hero from "@/pages/Hero";
-import VisualTour from "@/pages/VisualTour";
+import Contact from "@/elements/Contact";
+import Features from "@/elements/Features";
+import Hero from "@/elements/Hero";
+import VisualTour from "@/elements/VisualTour";
 
 export default function Home() {
   return (
