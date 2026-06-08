@@ -31,7 +31,7 @@ const Nav = () => {
 
   return (
     <header>
-      <nav className={`px-5 md:px-10 lg:px-20 flex gap-10 m-auto items-center fixed bg-white z-50 top-0 left-0 right-0 ${isScrolled && "bg-white/70 backdrop-blur-md border-b border-gray-300 shadow-md"}`}>
+      <nav className={`px-5 pt-2 md:pt-0 md:px-10 lg:px-20 flex gap-10 m-auto items-center fixed bg-white z-50 top-0 left-0 right-0 ${isScrolled && "bg-white/70 backdrop-blur-md border-b border-gray-300 shadow-md"}`}>
         <Image src={logo.primary} alt='logo' className='mr-auto' />
 
         <ul className='hidden md:flex text-sm font-medium gap-10'>

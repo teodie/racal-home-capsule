@@ -19,7 +19,7 @@ const Contact = () => {
 
       <div className='h-full md:h-100
        grid grid-cols-1 mx-5 md:grid-cols-2 max-w-200 md:mx-auto bg-white'>
-        <div className='flex flex-col mt-10 gap-y-10'>
+        <div className='flex flex-col my-10 gap-y-10'>
           {
             contactDetails.map((contact) => (
               <ContactCard key={contact.details} icon={contact.icon} label={contact.label} details={contact.details} />

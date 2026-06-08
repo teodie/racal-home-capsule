@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <div className="">
 
-      <div className="relative ">
+      <div className="">
 
         {
           modalVisible && <Modal toggle={closeModal} />

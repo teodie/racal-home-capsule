@@ -95,7 +95,7 @@ const Modal = ({ toggle }: { toggle: () => void }) => {
 
 
   return (
-    <div className='absolute inset-0 z-30 bg-white/10 backdrop-blur-[5px]  flex items-center justify-center'>
+    <div className='absolute inset-0 z-100 bg-white/10 backdrop-blur-[5px]  flex items-center justify-center'>
       <div className='py-5 w-105 bg-white rounded-3xl px-5 relative'>
         {
           step === 2 &&
