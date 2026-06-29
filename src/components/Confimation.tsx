@@ -7,7 +7,7 @@ const Confimation = ({ formData, next }: { formData: formDataTypes, goBack: () =
 
       <div className='mb-5'>
         <span className="text-4xl text-amber-600 text-center block mb-5">Confirmation</span>
-        <p>Please confirm below information is correnct and accurate.</p>
+        <p>Please confirm below information is correct and accurate.</p>
       </div>
 
       <div className='flex flex-col gap-3 bg-gray-200 px-3 text-lg py-5'>

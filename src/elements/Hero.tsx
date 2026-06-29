@@ -3,7 +3,6 @@ import Image from "next/image"
 import { image } from "../../public/assets/assets"
 import Button from "@/components/Button"
 import Modal from "@/components/Modal"
-import { useState } from "react"
 import { useModal } from "@/hooks/useModal"
 
 

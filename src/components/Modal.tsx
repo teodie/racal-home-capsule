@@ -13,6 +13,8 @@ const INITIAL_FORM_STATE = {
 
 const Modal = ({ toggle }: { toggle: () => void }) => {
 
+  
+
   const [step, setStep] = useState(1)
   const [formData, setFormData] = useState(INITIAL_FORM_STATE)
   const [error, setError] = useState("")
