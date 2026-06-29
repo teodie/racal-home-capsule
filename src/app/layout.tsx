@@ -7,6 +7,7 @@ import Modal from "@/components/Modal";
 import BookingForm from "@/components/BookingForm";
 import Confimation from "@/components/Confimation";
 import { ModalProvider } from "@/hooks/useModal";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ModalProvider>
+        <SpeedInsights/>
       </body>
     </html>
   );
