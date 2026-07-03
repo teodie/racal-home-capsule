@@ -3,11 +3,9 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/elements/Nav";
 import Footer from "@/elements/Footer";
-import Modal from "@/components/Modal";
-import BookingForm from "@/components/BookingForm";
-import Confimation from "@/components/Confimation";
 import { ModalProvider } from "@/hooks/useModal";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +41,7 @@ export default function RootLayout({
           <Footer />
         </ModalProvider>
         <SpeedInsights/>
+        <Analytics />
       </body>
     </html>
   );
